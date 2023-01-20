@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="gymNET.AllSeriesPage">
+    <ContentPage.Title>Series in exercise</ContentPage.Title>
+     <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New" Clicked="OnAddSeriesClicked">
+            <ToolbarItem.IconImageSource>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="Android, UWP" Value="plus.png" />
+                </OnPlatform>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Grid>
+       <Grid.RowDefinitions>
+               <RowDefinition Height="Auto" />
+       </Grid.RowDefinitions>
+                                  
+
+       <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*" />
+            <ColumnDefinition Width="30*" />
+            <ColumnDefinition Width="30*" />
+       </Grid.ColumnDefinitions>
+
+       <Label Grid.Column="0" Text="Repetitions" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+       <Label Grid.Column="1" Text="Weight" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+       <Label Grid.Column="2" Text="Delete" FontSize="15" FontAttributes="Bold" TextColor="Black"/>
+                        
+   </Grid>
+    <ListView x:Name="listView" 
+              Margin="20" >
+        <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <Grid x:Name="Item">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="30*"/>
+                  <ColumnDefinition Width="30*"/>
+                  <ColumnDefinition Width="30*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="{Binding Reps}"></Label>
+                <Label Grid.Column="1" Text="{Binding Weight}"></Label>
+                <Button Grid.Column="2" Text="Delete" CommandParameter="{Binding Id}" Clicked="OnDeleteButtonClicked"></Button>
+              </Grid>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    </StackLayout>
+</ContentPage>
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gymNET.Android", "gymNET\gymNET.Android\gymNET.Android.csproj", "{1A5F9F09-BA82-43D8-BCCE-F52CCADDB247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gymNET", "gymNET\gymNET\gymNET.csproj", "{ED2606C5-2CA3-44FA-9AFD-CAAF0806771A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A5F9F09-BA82-43D8-BCCE-F52CCADDB247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5F9F09-BA82-43D8-BCCE-F52CCADDB247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5F9F09-BA82-43D8-BCCE-F52CCADDB247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5F9F09-BA82-43D8-BCCE-F52CCADDB247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2606C5-2CA3-44FA-9AFD-CAAF0806771A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2606C5-2CA3-44FA-9AFD-CAAF0806771A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2606C5-2CA3-44FA-9AFD-CAAF0806771A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2606C5-2CA3-44FA-9AFD-CAAF0806771A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7CCCFF7-48F1-439E-BF58-CA95780AB5F4}
+	EndGlobalSection
+EndGlobal
